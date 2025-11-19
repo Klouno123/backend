@@ -15,7 +15,6 @@ app.use(express.urlencoded({ extended: true }));
 
 // MongoDB Connection
 const MONGO_URI = process.env.MONGO_URI || "mongodb+srv://fritzlloydlaguna_db_user:fritz123@cluster0.nrzxndc.mongodb.net/?appName=Cluster0";
-
 mongoose.connect(MONGO_URI, {
     useNewUrlParser: true,
     useUnifiedTopology: true,
